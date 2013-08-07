@@ -33,7 +33,7 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./build/tools/releasetools/ota_from
 
 # Kernel
 TARGET_KERNEL_CONFIG        := cyanogen_goghvmu_defconfig
-BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x200000
+BOARD_MKBOOTIMG_ARGS        := --base 0x80200000 --cmdline 'console=null androidboot.hardware=qcom user_debug=31 sec_log=0x80000@0x88d00008 sec_dbg=0x40000@0x88d90004 sec_debug.reset_reason=0x1a2b3c00 etb_buf=0x4000@0x8fffb9c0 androidboot.debug_level=0x4f4c sec_debug.enable=0 sec_debug.enable_user=0 androidboot.cp_debug_level=0x55FF sec_debug.enable_cp_debug=0 cordon=0024a9e1c9bb9a2690605f99659f4e01 sysscope=0xee000000 loglevel=4 samsung.hard'
 TARGET_KERNEL_SOURCE        := kernel/samsung/goghvmu
 
 # Bluetooth
