@@ -15,10 +15,10 @@
 #
 
 $(call inherit-product-if-exists, vendor/samsung/apexqtmo/apexqtmo-vendor.mk)
-VARIENT_MODEL := apexqtmo
-#VARIENT_REQUIRE_3.0_KERNEL := true
+VARIENT_MODEL := goghvmu
+VARIENT_REQUIRE_3.0_KERNEL := true
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/apexqtmo/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/goghvmu/overlay
 
 
 ## common overlays

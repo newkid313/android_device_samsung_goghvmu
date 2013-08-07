@@ -26,15 +26,15 @@
 -include device/samsung/d2-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := apexqtmo
+TARGET_OTA_ASSERT_DEVICE := goghvmu
 
 # Insert contents of file near end of updater-script
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./build/tools/releasetools/ota_from_target_files -e ./device/samsung/apexqtmo/installer_extra
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogen_apexq_defconfig
-BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x01500000
-TARGET_KERNEL_SOURCE        := kernel/samsung/d2
+TARGET_KERNEL_CONFIG        := cyanogen_goghvmu_defconfig
+BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x200000
+TARGET_KERNEL_SOURCE        := kernel/samsung/goghvmu
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
